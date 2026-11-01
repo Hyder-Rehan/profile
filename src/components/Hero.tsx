@@ -27,7 +27,12 @@ export const Hero: React.FC = () => {
           {/* Left Column: Heading, Subtitle, Bio, Socials, CTAs */}
           <div className="lg:col-span-6 flex flex-col items-start z-10 text-left">
             {/* Status indicator badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs font-mono text-cyan-300 mb-6">
+            <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs font-mono text-cyan-300 mb-6 shadow-lg backdrop-blur-sm">
+              <img
+                src={PERSONAL_INFO.avatar}
+                alt={PERSONAL_INFO.name}
+                className="w-5 h-5 rounded-full object-cover ring-1 ring-cyan-400/60"
+              />
               <span className="relative flex h-2 w-2">
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
               </span>

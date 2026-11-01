@@ -43,6 +43,7 @@ export interface SkillCategory {
 export const PERSONAL_INFO = {
   name: 'Rehan Hyder',
   role: 'Frontend Developer & Creative Web Developer',
+  avatar: '/assets/aistudio/pic_4fdaf2e9.jpg',
   email: 'hyderrehan79@gmail.com',
   education: 'Currently enrolled in BS Software Engineering',
   location: 'Karachi, Pakistan',

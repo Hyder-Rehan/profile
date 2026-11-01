@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
               frontend web experiences.
             </p>
 
-            {/* Social Icons Row: LinkedIn, GitHub, Facebook, Email */}
+            {/* Social Icons Row: LinkedIn, GitHub, Facebook, WhatsApp, Email */}
             <div className="flex items-center gap-2.5 pt-2">
               {/* LinkedIn */}
               <a

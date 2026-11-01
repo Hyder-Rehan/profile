@@ -37,22 +37,36 @@ export const About: React.FC = () => {
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-md">
               <div className="relative rounded-2xl bg-[#090e1a] border border-slate-800 p-6 sm:p-7 shadow-xl">
-                {/* Visual Avatar / Identity Badge */}
-                <div className="relative rounded-xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-slate-900 via-slate-850 to-slate-950 border border-slate-800 flex items-center justify-center mb-6">
-                  <div className="relative z-10 flex flex-col items-center text-center p-4">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-[1.5px] shadow-lg mb-3">
-                      <div className="w-full h-full rounded-2xl bg-[#0b101f] flex items-center justify-center">
-                        <Terminal className="w-9 h-9 text-cyan-400" />
-                      </div>
+                {/* Visual Avatar / Real Portrait Photo */}
+                <div className="relative rounded-2xl overflow-hidden aspect-[3/4] max-h-[420px] bg-slate-900 border border-slate-700/80 shadow-2xl mb-6 group">
+                  <img
+                    src={PERSONAL_INFO.avatar}
+                    alt={`${PERSONAL_INFO.name} - ${PERSONAL_INFO.role}`}
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+
+                  {/* Floating Status Pill */}
+                  <div className="absolute top-3 left-3 z-10">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-cyan-500/30 text-[11px] font-mono text-cyan-300 shadow-md">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                      <span>Available for Hire</span>
                     </div>
-                    <span className="font-heading font-bold text-lg text-white">
+                  </div>
+
+                  {/* Dark Gradient Overlay for bottom text legibility */}
+                  <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#090e1a] via-[#090e1a]/80 to-transparent pointer-events-none" />
+
+                  {/* Name and Title Overlay */}
+                  <div className="absolute inset-x-0 bottom-0 p-4 z-10 flex flex-col">
+                    <span className="font-heading font-bold text-xl text-white tracking-tight drop-shadow-md">
                       {PERSONAL_INFO.name}
                     </span>
-                    <span className="text-xs font-mono text-cyan-400 mt-0.5">
+                    <span className="text-xs font-mono text-cyan-300 font-medium drop-shadow-sm">
                       {PERSONAL_INFO.role}
                     </span>
-                    <span className="mt-1 text-[11px] text-slate-400 font-medium">
-                      BS Software Engineering
+                    <span className="text-[11px] text-slate-300 font-mono mt-0.5 opacity-90">
+                      BS Software Engineering • Karachi, PK
                     </span>
                   </div>
                 </div>
