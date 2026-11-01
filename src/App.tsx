@@ -9,6 +9,7 @@ import { Process } from './components/Process';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ParticlesBackground } from './components/ParticlesBackground';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -59,6 +60,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Floating WhatsApp Contact Button */}
+      <FloatingWhatsApp />
     </div>
   );
 }

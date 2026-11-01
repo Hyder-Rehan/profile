@@ -57,6 +57,11 @@ export const PERSONAL_INFO = {
     github: 'https://github.com/Hyder-Rehan',
     linkedin: 'https://www.linkedin.com/in/rehan-hyder-144675350/',
     facebook: 'https://www.facebook.com/shahzada.kamboh.790/',
+    whatsapp: 'https://wa.me/923485454591?text=Hello%20Rehan!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you.',
+  },
+  whatsapp: {
+    phone: '+92 348 5454591',
+    url: 'https://wa.me/923485454591?text=Hello%20Rehan!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you.',
   },
   stats: [
     { label: 'Featured Projects', value: '4+' },
